@@ -49,7 +49,7 @@ func TestGetAPIKey(t *testing.T) {
 			headers: http.Header{
 				"Authorization": []string{"ApiKey  your-api-key"},
 			},
-			expectedKey: "your-api-key",
+			expectedKey: "",
 			expectedErr: ErrMalformedAuthHeader,
 		},
 	}
